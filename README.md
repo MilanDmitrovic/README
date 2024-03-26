@@ -1,18 +1,31 @@
-"MilanDmitrovic/README"
+# Analiza koda
 
-Za **Start.java**:
+Ovaj projekat sadrži dva Java fajla: Start.java i Calculator.java. Oba fajla su analizirana kako bi se identifikovali potencijalni problemi i predložila rešenja.
 
-1. **Smanjena složenost koda:** Izostavljene su nepotrebne promenljive i skraćene definicije.
-2. **Jednostavnija logika za izlazak:** Korišćen je `equalsIgnoreCase` umesto `equals` kako bi se omogućilo korisniku da unese "Izlaz" ili "izlaz" i izađe iz programa.
-3. **Optimizovano korišćenje metoda:** Koristi se `Calculator.evaluateExpression` umesto `Calculator.Run` za izračunavanje rezultata izraza.
-4. **Kraći izraz za ispis rezultata:** Korišćena je `System.out.println` za ispisivanje rezultata izračunavanja izraza.
-5. **Zatvaranje Scanner objekta:** Dodata je linija koda `scanner.close()` kako bi se zatvorio Scanner objekat kada korisnik izađe iz programa.
+## Start.java
 
-Za **Calculator.java**:
+- **Broj linija koda:** X
+- **Ciklomatska složenost:** X
+- **Kognitivna složenost:** X
 
-1. **Jednostavnija logika za izlazak:** Izostavljena je provera izraza "exit" unutar metode `evaluateExpression`.
-2. **Optimizovano korišćenje metoda:** Korišćenje `try-catch` bloka za obradu grešaka pri evaluaciji izraza umesto provere unosa unutar metode.
-3. **Izostavljanje nepotrebnih linija koda:** Izostavljena je nepotrebna linija koda za proveru izraza "exit" unutar metode `evaluate`.
-4. **Kraći izraz za obradu grešaka:** Korišćena je jedna linija za povrat "ERROR" u slučaju greške umesto dve linije.
+### Zaključci:
 
-Ove izmene omogućavaju kraći, čistiji i efikasniji kod za obe klase.
+- Kod je čist i dobro organizovan.
+- Primena `Scanner` objekta izvan petlje smanjuje ponovno stvaranje objekta.
+- Korišćenje `equalsIgnoreCase` metode omogućava korisniku unos "Izlaz" ili "izlaz" za izlazak iz programa.
+- Metoda `Calculator.evaluateExpression` se koristi za izračunavanje rezultata umesto `Calculator.Run`.
+- Korišćenje `System.out.println` za ispis rezultata izračunavanja izraza.
+- `scanner.close()` metoda zatvara Scanner objekat kada korisnik završi sa programom.
+
+## Calculator.java
+
+- **Broj linija koda:** X
+- **Ciklomatska složenost:** X
+- **Kognitivna složenost:** X
+
+### Zaključci:
+
+- Kod je čist i dobro organizovan.
+- Uklonjena nepotrebna linija koda za proveru izraza "exit" unutar `evaluateExpression` metode.
+- Korišćenje `try-catch` bloka za obradu grešaka pri evaluaciji izraza umesto provere unosa unutar metode.
+- Jednostavnije vraćanje "ERROR" u slučaju greške umesto korišćenja dve linije koda.
